@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/news_detail_img"
+                android:layout_width="wrap_content"
+                android:layout_height="220dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/test"/>
+
+
+            <TextView
+                android:id="@+id/news_detail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/news_detail_img"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="10dp"
+                android:text="读读日报 24 小时热门 TOP 5 · 脱欧的影响"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+
+        <WebView
+            android:id="@+id/news_detail_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:isScrollContainer="false"
+            android:scrollbars="none"></WebView>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/news_comments_item_avatar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@mipmap/ic_launcher"
+        app:civ_border_color="#cccaca"
+        app:civ_border_width="2dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp">
+
+        <TextView
+            android:id="@+id/news_comments_item_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="onlylemi"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/news_comments_item_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/news_comments_item_author"
+            android:layout_marginTop="10dp"
+            android:text="估计是我喜欢清淡吧，舌头很敏感，一直觉得飞机餐挺好吃的。感觉到的问题，一个是味道不纯粹，可能饭菜一起加热的缘故，然后味觉下降应该是感觉的到的，以前不知道，还以为是环境影响的～ 最后，如果在南航厦航海航上看到一个问空姐要第二份的蓝荒人，还吃的一点不剩，很可能是我～"
+            android:textColor="#000000"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/news_comments_item_likes"
+            android:layout_toStartOf="@+id/news_comments_item_likes"
+            android:src="@drawable/ic_thumb_up_gray"/>
+
+        <TextView
+            android:id="@+id/news_comments_item_likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:text="2"/>
+
+        <TextView
+            android:id="@+id/news_comments_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/news_comments_item_content"
+            android:layout_marginTop="10dp"
+            android:text="06-25 20:51"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/daily_top_news_item_img"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/test"/>
+
+    <TextView
+        android:id="@+id/daily_top_news_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/daily_top_news_item_img"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="10dp"
+        android:text="读读日报 24 小时热门 TOP 5 · 脱欧的影响"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

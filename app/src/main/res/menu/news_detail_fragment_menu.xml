@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_share"
+        android:icon="@drawable/ic_share"
+        android:title="分享"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menu_favorite"
+        android:icon="@drawable/ic_favorite_border"
+        android:title="收藏"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menu_comments"
+        android:icon="@drawable/ic_comment"
+        android:title="评论"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menu_comments_num"
+        android:title="100"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menu_likes"
+        android:icon="@drawable/ic_thumb_up"
+        android:title="点赞"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menu_likes_nums"
+        android:checkable="false"
+        android:title="20"
+        app:showAsAction="always"/>
+
+</menu>
