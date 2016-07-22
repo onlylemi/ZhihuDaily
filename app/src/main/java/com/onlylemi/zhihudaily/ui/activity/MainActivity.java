@@ -22,6 +22,8 @@ import com.onlylemi.zhihudaily.utils.ActivityUtils;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final String CURRENT_FRAGMENT_KEY = "CURRENT_FRAGMENT_KEY";
+
     private DrawerLayout drawerLayout;
     private long time = 0;
 
@@ -73,6 +75,12 @@ public class MainActivity extends AppCompatActivity {
 
         new DailyPresenter(dailyFragment, Injection.provideDataManager(App.getContext()));
 
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+//        outState.putSerializable(CURRENT_FRAGMENT_KEY, );
+        super.onSaveInstanceState(outState);
     }
 
     @Override

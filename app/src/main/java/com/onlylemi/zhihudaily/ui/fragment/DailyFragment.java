@@ -89,7 +89,6 @@ public class DailyFragment extends Fragment implements DailyContract.View {
         RecyclerViewHeader header = (RecyclerViewHeader) root.findViewById(R.id
                 .daily_recycler_view_header);
         header.attachTo(recyclerView, true);
-
         recyclerView.setAdapter(dailyAdapter);
 
         dailyAdapter.setOnItemClickListener(new DailyAdapter.OnItemClickListener() {
@@ -98,6 +97,7 @@ public class DailyFragment extends Fragment implements DailyContract.View {
                 presenter.openNews(dailyAdapter.getItem(position).getId() + "");
             }
         });
+
 
         // 选择日期
         FloatingActionButton fab = (FloatingActionButton) root.findViewById(R.id.fab_select_daily);

@@ -23,9 +23,13 @@
         </activity>
         <activity android:name=".ui.activity.MainActivity">
         </activity>
-        <activity android:name=".ui.activity.NewsDetailActivity">
+        <activity
+            android:name=".ui.activity.NewsDetailActivity"
+            android:theme="@style/Transparent">
         </activity>
-        <activity android:name=".ui.activity.NewsCommentsActivity">
+        <activity
+            android:name=".ui.activity.NewsCommentsActivity"
+            android:theme="@style/Transparent">
         </activity>
     </application>
 

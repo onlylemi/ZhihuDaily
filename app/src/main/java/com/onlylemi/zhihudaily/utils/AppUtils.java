@@ -1,7 +1,9 @@
 package com.onlylemi.zhihudaily.utils;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.util.DisplayMetrics;
 import android.util.TypedValue;
 
 import java.util.Arrays;
@@ -14,8 +16,6 @@ import java.util.List;
  * @time: 2016-06-26 21:35
  */
 public class AppUtils {
-
-    private static String[] strs;
 
     private AppUtils() {
 
@@ -59,8 +59,39 @@ public class AppUtils {
         return Arrays.asList(str.split(spaceCharacter));
     }
 
+    /**
+     * dp 转 px
+     *
+     * @param context
+     * @param dp
+     * @return
+     */
     public static int dp2px(Context context, int dp) {
         return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp,
                 context.getResources().getDisplayMetrics());
+    }
+
+    /**
+     * 屏幕的width
+     *
+     * @param activity
+     * @return
+     */
+    public static int screeWidth(Activity activity) {
+        DisplayMetrics metrics = new DisplayMetrics();
+        activity.getWindowManager().getDefaultDisplay().getMetrics(metrics);
+        return metrics.widthPixels;
+    }
+
+    /**
+     * 屏幕的高
+     *
+     * @param activity
+     * @return
+     */
+    public static int screeHeight(Activity activity) {
+        DisplayMetrics metrics = new DisplayMetrics();
+        activity.getWindowManager().getDefaultDisplay().getMetrics(metrics);
+        return metrics.heightPixels;
     }
 }

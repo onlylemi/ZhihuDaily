@@ -2,17 +2,17 @@ package com.onlylemi.zhihudaily.ui.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
 import com.onlylemi.zhihudaily.App;
 import com.onlylemi.zhihudaily.Injection;
 import com.onlylemi.zhihudaily.R;
 import com.onlylemi.zhihudaily.presenter.NewsCommentsPresenter;
+import com.onlylemi.zhihudaily.ui.activity.base.BaseActivity;
 import com.onlylemi.zhihudaily.ui.fragment.NewsCommentsFragment;
 import com.onlylemi.zhihudaily.utils.ActivityUtils;
 
-public class NewsCommentsActivity extends AppCompatActivity {
+public class NewsCommentsActivity extends BaseActivity {
 
     public static final String NEWS_ID = "NEWS_ID";
 
